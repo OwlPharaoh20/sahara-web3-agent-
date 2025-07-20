@@ -1,0 +1,4 @@
+rich
+web3
+requests
+python-dotenv
