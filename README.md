@@ -1,12 +1,13 @@
 # Sahara Crypto Agent
 
-A command-line agent for interacting with cryptocurrency wallets, built in Python.
+A command-line agent for interacting with Base chain sepolia testnet , built in Python including alchemy RPC API.
 
 ## Features
 
 - Command-line interface for wallet operations
 - Ethereum wallet address input
-- (Add more features as you develop them)
+- Send ETH, check balance
+- Swap tokens ( coming soon)
 
 ## Getting Started
 
@@ -56,8 +57,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-[MIT](LICENSE) (or specify your license)
 
----
 
-*This README was generated based on the project structure and inferred purpose. Update it as your project evolves!*
