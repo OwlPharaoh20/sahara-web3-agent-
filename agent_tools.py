@@ -1,6 +1,7 @@
 from langchain.tools import tool
 from rpc_tools import get_eth_balance, send_eth
 import os
+import re
 
 WALLET_ADDRESS = os.getenv("WALLET_ADDRESS")
 
@@ -22,8 +23,6 @@ def SendETH(input_text: str) -> str:
     The input should be a sentence like: 'Send 0.1 ETH to 0xABC...'
     """
     try:
-        import re
-
         # Extract ETH amount and recipient address
         amount_match = re.search(r"([\d.]+)\s*eth", input_text.lower())
         address_match = re.search(r"(0x[a-fA-F0-9]{40})", input_text)
@@ -38,3 +37,4 @@ def SendETH(input_text: str) -> str:
 
     except Exception as e:
         return f"❌ Error while sending ETH: {e}"
+
